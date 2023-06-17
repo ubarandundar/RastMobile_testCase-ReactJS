@@ -10,6 +10,10 @@
     margin-left: 14px;
 }
 
+.socialMediaLogo:hover {
+    opacity: 0.8;
+}
+
 .navbarMenu {
     font-family: 'Poppins';
     font-style: normal;

@@ -8,6 +8,15 @@
     padding: 20px 0 20px 50px;
 }
 
+.rdt_TableHeadRow {
+    border-bottom: 2px solid #C4CEE5;
+    border-radius: 8px 8px 0 0;
+}
+
+.rdt_TableCol:last-child {
+    flex: 2 !important;
+}
+
 .rdt_TableRow {
     font-family: 'Inter';
     font-style: normal;
@@ -17,3 +26,70 @@
     color: #000000;
     padding: 33px 0 18px 50px;
 }
+
+.rdt_TableCol_Sortable {
+    display: flex;
+    justify-content: space-between !important;
+}
+
+.rdt_TableCol_Sortable span {
+    opacity: 1;
+}
+
+.rdt_TableCol_Sortable:hover {
+    color: #744BFC;
+}
+
+.rdt_Table {
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+}
+
+.rdt_Pagination {
+    background-color: transparent !important;
+}
+
+/* .rdt_Pagination span:after {
+    content: 'Show:' !important;
+} */
+
+.rdt_TableCell:last-child {
+    flex: 2 !important;
+}
+
+.sc-hcKobq {
+    color: #744BFC;
+}
+
+.sc-lfmRZu {
+    border: 1px solid #CFC0FF;
+    border-radius: 39px;
+    margin-left: 23px;
+}
+
+.sc-lfmRZu select option {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 15px;  
+    color: #000000;
+}
+
+#pagination-last-page, #pagination-first-page {
+    display: none;
+}
+
+#pagination-previous-page:disabled, #pagination-next-page:disabled {
+    fill: #C9C9C9;
+}
+
+#pagination-previous-page, #pagination-next-page {
+    fill: #744BFC;
+}
+
+.sc-hcKobq, .sc-lfmRZu {
+    margin-right: auto;
+}
+
+

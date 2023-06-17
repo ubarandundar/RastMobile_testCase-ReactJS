@@ -3,3 +3,23 @@
     background: linear-gradient(180deg, #EFF2FF -30.56%, rgba(232, 236, 255, 0) 135.85%);
     border-radius: 6px;
 }
+
+.dataGridBodyButton {
+    padding: 10px 20px;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    background: #744BFC;
+    border-radius: 39px;   
+    border: 1px solid #744BFC; 
+    margin-bottom: 11px;
+    display: block;
+    margin-left: auto;
+}
+
+.dataGridBodyButton:hover {
+    opacity: 0.8;
+}
