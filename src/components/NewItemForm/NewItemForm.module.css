@@ -10,6 +10,8 @@ form {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* animation: openForm 0.8s ease-out forwards; */
+    transition: all 0.5 ease-out;
 }
 
 form img {
@@ -91,6 +93,21 @@ form input {
     background: #F5F7FF;
     border: 1px solid #F5F7FF;
     color:#744BFC;
+}
+
+@keyframes openForm {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(90%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 767px) {
