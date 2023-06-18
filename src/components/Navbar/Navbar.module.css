@@ -28,3 +28,9 @@
 .navbarMenu:hover {
     color: #744BFC;
 }
+
+@media (max-width: 767px) {
+    .navbar {
+        margin: 35px 0;
+    }
+}

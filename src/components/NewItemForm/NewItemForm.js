@@ -27,7 +27,7 @@ function NewItemForm() {
             <label htmlFor='description'>Açıklama</label>
             <input type='text' name='description' />
         </div>
-        <div className='d-flex justify-content-end'>
+        <div className={classes.buttonsWrapper}>
             <button onClick={handleCancel} className={classes.closeButton} type='button'>Vazgeç</button>
             <button className={classes.saveButton} type='button'>Kaydet</button>
         </div>

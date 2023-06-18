@@ -39,7 +39,8 @@
   
   /* General sidebar styles */
   .bm-menu {
-    background: white;
+    /* background: white; */
+    background-color: #a90000;
     padding: 2.5em 1.5em 0;
     font-size: 1.15em;
   }
@@ -64,3 +65,9 @@
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
   }
+
+@media (max-width: 767px) {
+    .bm-burger-button {
+      right: 12px;
+    } 
+}

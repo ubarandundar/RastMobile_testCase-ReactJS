@@ -30,19 +30,45 @@ function Navbar() {
     }, []);
 
     const burgerMenu = (
-        <>
         <Menu 
             width={400}
             right={true}
             isOpen={isBurgerMenuOpen}
-            onStateChange={handleBurgerMenuClick}
-        />
-        </>
+            onStateChange={handleBurgerMenuClick}>
+                <div className='d-flex flex-column'>
+                <a href='www.google.com' className={classes.navbarMenu}>
+                    Hakkımızda
+                </a>
+                <a href='www.google.com' className={classes.navbarMenu}>
+                    Jüri - Yarışma Yazılımı
+                </a>
+                <a href='www.google.com' className={classes.navbarMenu}>
+                    Word Ninja
+                </a>
+                <a href='www.google.com'className={classes.navbarMenu}>
+                    Word Pyramids
+                </a>
+                </div>
+                <div>
+                <a href='www.google.com' >
+                    <img className={classes.socialMediaLogo} src={YoutubeImage} alt='youtube-image' />
+                </a>
+                <a href='www.google.com' >
+                    <img className={classes.socialMediaLogo} src={InstagramImage} alt='instagram-image' />
+                </a>
+                <a href='www.google.com' >
+                    <img className={classes.socialMediaLogo} src={BehanceImage} alt='behance-image' />
+                </a>
+                <a href='www.google.com' >
+                <img className={classes.socialMediaLogo} src={LinkedInImage} alt='linkedin-image' />
+                </a>
+            </div>
+            </Menu>
         );
 
         const normalMenu = (
             <>
-                   <div className='d-flex flex-row'>
+            <div className='d-flex flex-row'>
                 <a href='www.google.com' className={classes.navbarMenu}>
                     Hakkımızda
                 </a>
@@ -73,7 +99,7 @@ function Navbar() {
             </>
         );
 
-    const menu = windowWidth <= 1200 ? burgerMenu : '';
+    const menuBurger = windowWidth <= 1200 ? burgerMenu : '';
     const menuDefault = windowWidth > 1200 ? normalMenu : '';
 
   return (
@@ -86,7 +112,7 @@ function Navbar() {
             {menuDefault}
         </nav>
     </div>
-    {menu}
+    {menuBurger}
     </>
   )
 }

@@ -23,3 +23,15 @@
 .dataGridBodyButton:hover {
     opacity: 0.8;
 }
+
+@media (max-width: 767px) {
+    .dataGridBody {
+        padding: 20px;
+    }
+
+    .dataGridBodyButton {
+        padding: 5px 10px;
+        width: 100%;
+        margin-left: 0;
+    }
+}

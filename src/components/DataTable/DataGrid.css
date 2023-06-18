@@ -49,9 +49,14 @@
     background-color: transparent !important;
 }
 
-/* .rdt_Pagination span:after {
-    content: 'Show:' !important;
+
+/* .rdt_TableCell div {
+    white-space: normal !important;
 } */
+
+.rdt_TableRow:last-child div {
+    white-space: normal !important;
+}
 
 .rdt_TableCell:last-child {
     flex: 2 !important;
@@ -92,4 +97,36 @@
     margin-right: auto;
 }
 
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #744BFC;
+    border-radius: 10px;
+}
 
+@media (max-width: 767px) {
+    .rdt_TableHeadRow {
+        padding: 10px;
+    }
+    
+    .rdt_TableRow {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 599px) {
+    .sc-hcKobq, .sc-lfmRZu {
+        margin-right: 0;
+    }
+
+    .sc-lfmRZu {
+        margin-left: 0;
+    }
+}
