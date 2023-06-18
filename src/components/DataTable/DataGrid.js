@@ -102,6 +102,8 @@ function DataGrid() {
         setShowForm(true);
       };
 
+    const [datas, setDatas] = useState(data);
+
   return (
     <div className='container'>
         <div className={classes.dataGridBody}>
