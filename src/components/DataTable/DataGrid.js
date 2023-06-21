@@ -76,16 +76,7 @@ const data = [
                 <NewItemForm show={showForm} saveValues={saveValues} handleClose={handleClose} />
                 <DataTable
                     columns={columns}
-                    data={datas.filter((item) => {
-                        if (enteredObject === "") {
-                          return item;
-                        } else if (
-                          item.name.toLowerCase().includes(enteredObject.toLowerCase())
-                        ) {
-                          return item;
-                        }
-                        return [];
-                      })}
+                    data={datas.filter((item) => (enteredObject === "" || item.name.toLowerCase().includes(enteredObject.toLowerCase())))}
                     responsive
                     pagination
                     highlightOnHover
