@@ -54,7 +54,7 @@ function Navbar() {
                     <img className={classes.socialMediaLogo} src={YoutubeImage} alt='youtube' />
                 </a>
                 <a href='www.google.com' >
-                    <img className={classes.socialMediaLogo} src={InstagramImage} alt='instagram-image' />
+                    <img className={classes.socialMediaLogo} src={InstagramImage} alt='instagram' />
                 </a>
                 <a href='www.google.com' >
                     <img className={classes.socialMediaLogo} src={BehanceImage} alt='behance' />
@@ -107,7 +107,7 @@ function Navbar() {
     <div className='container'>
         <nav className={classes.navbar}>
             <div>
-                <img src={RastMobileImage} alt='rast-mobile-image' />
+                <img src={RastMobileImage} alt='rast-mobile' />
             </div>
             {menuDefault}
         </nav>
