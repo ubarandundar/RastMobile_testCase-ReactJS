@@ -29,8 +29,17 @@
     color: #744BFC;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1200px) {
     .navbar {
         margin: 35px 0;
+    }
+
+    .navbarMenu {
+        margin: 10px 0;
+    }
+
+    .socialMediaLogo {
+        margin-left: 0;
+        margin-right: 14px;
     }
 }

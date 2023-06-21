@@ -33,7 +33,7 @@ function Navbar() {
         <Menu 
             width={400}
             right={true}
-            isOpen={isBurgerMenuOpen}
+            isOpen={false}
             onStateChange={handleBurgerMenuClick}>
                 <div className='d-flex flex-column'>
                 <a href='www.google.com' className={classes.navbarMenu}>
@@ -51,19 +51,19 @@ function Navbar() {
                 </div>
                 <div>
                 <a href='www.google.com' >
-                    <img className={classes.socialMediaLogo} src={YoutubeImage} alt='youtube-image' />
+                    <img className={classes.socialMediaLogo} src={YoutubeImage} alt='youtube' />
                 </a>
                 <a href='www.google.com' >
                     <img className={classes.socialMediaLogo} src={InstagramImage} alt='instagram-image' />
                 </a>
                 <a href='www.google.com' >
-                    <img className={classes.socialMediaLogo} src={BehanceImage} alt='behance-image' />
+                    <img className={classes.socialMediaLogo} src={BehanceImage} alt='behance' />
                 </a>
                 <a href='www.google.com' >
-                <img className={classes.socialMediaLogo} src={LinkedInImage} alt='linkedin-image' />
+                <img className={classes.socialMediaLogo} src={LinkedInImage} alt='linkedin' />
                 </a>
             </div>
-            </Menu>
+        </Menu>
         );
 
         const normalMenu = (
@@ -84,16 +84,16 @@ function Navbar() {
             </div>
             <div>
                 <a href='www.google.com' >
-                    <img className={classes.socialMediaLogo} src={YoutubeImage} alt='youtube-image' />
+                    <img className={classes.socialMediaLogo} src={YoutubeImage} alt='youtube' />
                 </a>
                 <a href='www.google.com' >
-                    <img className={classes.socialMediaLogo} src={InstagramImage} alt='instagram-image' />
+                    <img className={classes.socialMediaLogo} src={InstagramImage} alt='instagram' />
                 </a>
                 <a href='www.google.com' >
-                    <img className={classes.socialMediaLogo} src={BehanceImage} alt='behance-image' />
+                    <img className={classes.socialMediaLogo} src={BehanceImage} alt='behance' />
                 </a>
                 <a href='www.google.com' >
-                <img className={classes.socialMediaLogo} src={LinkedInImage} alt='linkedin-image' />
+                <img className={classes.socialMediaLogo} src={LinkedInImage} alt='linkedin' />
                 </a>
             </div>
             </>
@@ -112,7 +112,9 @@ function Navbar() {
             {menuDefault}
         </nav>
     </div>
+    <div className='container position-relative'>
     {menuBurger}
+    </div>
     </>
   )
 }

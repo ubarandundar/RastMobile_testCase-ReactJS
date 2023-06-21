@@ -49,13 +49,12 @@
     background-color: transparent !important;
 }
 
-
-/* .rdt_TableCell div {
+.rdt_TableCell div {
     white-space: normal !important;
-} */
+}
 
-.rdt_TableRow:last-child div {
-    white-space: normal !important;
+.rdt_TableCol div div {
+    white-space: nowrap !important;
 }
 
 .rdt_TableCell:last-child {
@@ -109,6 +108,12 @@
 ::-webkit-scrollbar-thumb {
     background: #744BFC;
     border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .rdt_TableCol div div {
+        white-space: normal !important;
+    }
 }
 
 @media (max-width: 767px) {

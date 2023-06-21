@@ -4,6 +4,12 @@
     border-radius: 6px;
 }
 
+.dataGridBodySub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .dataGridBodyButton {
     padding: 10px 20px;
     color: white;
@@ -17,21 +23,65 @@
     border: 1px solid #744BFC; 
     margin-bottom: 11px;
     display: block;
-    margin-left: auto;
 }
 
 .dataGridBodyButton:hover {
     opacity: 0.8;
 }
 
+.dataGridBodyInput {
+    padding: 10px 20px;
+    width: 300px;
+    height: 43px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8C8C8C;
+    border-radius: 39px 0 0 39px;
+    border: 1px solid white;
+    margin-bottom: 11px;
+    float: left;
+    width: 80%;
+}
+  
+  .dataGridBodySub div button {
+    float: left;
+    width: 20%;
+    height: 43px;
+    padding: 10px;
+    background: #744BFC;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #744BFC;
+    border-left: none; 
+    cursor: pointer;
+    border-radius: 0 39px 39px 0;
+  }
+  
+  .dataGridBodySub div button:hover {
+    opacity: 0.8;
+  }
+
 @media (max-width: 767px) {
     .dataGridBody {
         padding: 20px;
     }
 
+    .dataGridBodySub {
+        flex-direction: column;
+    }
+
     .dataGridBodyButton {
-        padding: 5px 10px;
         width: 100%;
-        margin-left: 0;
+    }
+
+    .dataGridBodyInput {
+        width: 80%;
+    }
+
+    .dataGridBodySub div button {
+        width: 20%;
     }
 }
