@@ -58,7 +58,6 @@ const data = [
       };
 
     const saveValues = ({ link, name, description }) => {
-        const newData = [...datas].push({ id: Math.random * 99999, link, name, description });
         setDatas(oldData => ([...oldData, { id: Math.random() * 99999, link, name, description }]))
     }
 
@@ -78,7 +77,7 @@ const data = [
                 <DataTable
                     columns={columns}
                     data={datas.filter((item) => {
-                        if (enteredObject === "") {
+                        if (enteredObject === " ") {
                           return item;
                         } else if (
                           item.name.toLowerCase().includes(enteredObject.toLowerCase())
