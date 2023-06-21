@@ -77,13 +77,14 @@ const data = [
                 <DataTable
                     columns={columns}
                     data={datas.filter((item) => {
-                        if (enteredObject === " ") {
+                        if (enteredObject === "") {
                           return item;
                         } else if (
                           item.name.toLowerCase().includes(enteredObject.toLowerCase())
                         ) {
                           return item;
                         }
+                        return [];
                       })}
                     responsive
                     pagination
