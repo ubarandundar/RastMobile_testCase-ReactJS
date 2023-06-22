@@ -18,6 +18,7 @@ function NewItemForm({ show = false, saveValues, handleClose }) {
     console.log(enteredName);
     console.log(enteredDescription);
     saveValues({ link: enteredLink, name: enteredName, description: enteredDescription });
+    handleClose();
   }
 
   const linkInputChangeHandler = (event) => {

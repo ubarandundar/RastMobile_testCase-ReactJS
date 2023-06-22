@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import DataTable from 'react-data-table-component';
 import classes from './DataGrid.module.css';
 import './DataGrid.css';
@@ -61,6 +61,17 @@ const data = [
         setDatas(oldData => ([...oldData, { id: Math.random() * 99999, link, name, description }]))
     }
 
+    useEffect(() => {
+        const storedData = localStorage.getItem('datas');
+        if (storedData) {
+        setDatas(JSON.parse(storedData));
+        }
+    }, []);
+
+    useEffect(() => {
+        localStorage.setItem('datas', JSON.stringify(datas));
+    }, [datas]);
+
     return (
         <div className='container'>
             <div className={classes.dataGridBody}>
@@ -76,7 +87,14 @@ const data = [
                 <NewItemForm show={showForm} saveValues={saveValues} handleClose={handleClose} />
                 <DataTable
                     columns={columns}
-                    data={datas.filter((item) => (enteredObject === "" || item.name.toLowerCase().includes(enteredObject.toLowerCase())))}
+                    data = {
+                        datas.filter((item) =>
+                          (enteredObject === "" ||
+                          item.name.toLowerCase().includes(enteredObject.toLowerCase()) ||
+                          item.link.toLowerCase().includes(enteredObject.toLowerCase()) ||
+                          item.description.toLowerCase().includes(enteredObject.toLowerCase()))
+                        )
+                      }
                     responsive
                     pagination
                     highlightOnHover
