@@ -2,8 +2,8 @@
 
 This project was created with ReactJS.
 
-Design of RastMobile:
-https://www.figma.com/file/F9d8ov4lPf3cfzTr9PyK5v/RastMobile?type=design&node-id=0-1&t=BwFxN48a0Rw7eQHv-0
+Task of RastMobile:
+https://docs.google.com/document/d/1g1dGLJmVos-LesM-0XZert53wnbiGBovcIc8OJWLsZk/edit?usp=sharing
 
 Netlify Link:
 https://rastmobile-testcase.netlify.app/
